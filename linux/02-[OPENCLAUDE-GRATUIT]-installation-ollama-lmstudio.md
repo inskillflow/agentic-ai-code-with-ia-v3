@@ -29,7 +29,7 @@
 
 ## 1. Qu'est-ce qu'OpenClaude ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -70,7 +70,7 @@ La grosse différence avec le vrai Claude Code : **OpenClaude accepte n'importe 
 
 ## 2. Installer Node.js
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -125,7 +125,7 @@ Après installation, **ferme et rouvre ton terminal**.
 
 ## 3. Installer OpenClaude (npm global)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -180,7 +180,7 @@ openclaude --help
 
 ## 4. Configurer pour Ollama (variables d'environnement)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -229,7 +229,7 @@ openclaude
 
 ## 5. Installer LM Studio (alternative à Ollama)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -276,7 +276,7 @@ Dans LM Studio :
 
 ## 6. Configurer pour LM Studio
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -309,7 +309,7 @@ openclaude
 
 ## 7. Variables d'environnement permanentes
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -364,7 +364,7 @@ set -a; source .env; set +a; openclaude
 
 ## 8. Premier test d'OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -409,7 +409,7 @@ cat hello.py
 
 ## 9. Configuration globale `~/.claude.json`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -475,7 +475,7 @@ Pour basculer, change `activeProvider` ou utilise une commande slash dans OpenCl
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -524,7 +524,7 @@ echo "$OPENAI_BASE_URL / $OPENAI_MODEL"
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

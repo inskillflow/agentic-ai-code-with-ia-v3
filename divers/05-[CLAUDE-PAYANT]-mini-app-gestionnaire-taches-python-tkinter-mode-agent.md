@@ -49,7 +49,7 @@ Ce TP construit une mini application graphique de gestion de tâches en Python +
 
 ## 1. Créer le projet
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -111,7 +111,7 @@ Identique sur les trois OS.
 
 ## 2. Ouvrir le projet avec Claude Code
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -150,7 +150,7 @@ Identique sur les trois OS. Vous êtes maintenant dans une session Claude Code, 
 
 ## 3. Première commande : `/help`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -182,7 +182,7 @@ L'aide s'affiche. **Règle** : les slash commands commencent toujours par `/` et
 
 ## 4. Lister toutes les commandes : `/`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -214,7 +214,7 @@ Claude Code affiche la liste complète des commandes disponibles. Réflexe à ac
 
 ## 5. Initialiser avec `/init`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -263,7 +263,7 @@ Claude modifie `CLAUDE.md` directement.
 
 ## 6. Demander un plan avec `/plan`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -306,7 +306,7 @@ Plan attendu :
 
 ## 7. Générer la version 1 du code
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -347,7 +347,7 @@ Claude Code modifie `main.py` directement (mode agent).
 
 ## 8. Vérifier les modifications avec `/diff`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -383,7 +383,7 @@ Vous pouvez aussi utiliser `git diff` dans un autre terminal pour la même infor
 
 ## 9. Tester l'application
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -425,7 +425,7 @@ Une fenêtre Tk s'ouvre. Testez :
 
 ## 10. Code attendu pour `main.py`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -509,7 +509,7 @@ fenetre.mainloop()
 
 ## 11. Améliorer : sauvegarde JSON
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -587,7 +587,7 @@ git commit -m "Sauvegarde JSON des tâches"
 
 ## 12. Surveiller le contexte avec `/context`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -619,7 +619,7 @@ Plus la conversation est longue, plus Claude garde de tokens en mémoire. À sur
 
 ## 13. Résumer la session avec `/compact`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -657,7 +657,7 @@ Claude résume tout ce qui a été dit en gardant uniquement l'essentiel pour co
 
 ## 14. Contrôler les permissions avec `/permissions`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -693,7 +693,7 @@ C'est essentiel : Claude Code agit directement sur votre projet. À ajuster selo
 
 ## 15. Créer une skill : `/python-feature`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -768,7 +768,7 @@ Claude Code charge le `SKILL.md`, applique la procédure et modifie `main.py`. V
 
 ## 16. Créer une skill : `/explain-python`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -836,7 +836,7 @@ Structure obligatoire :
 
 ## 17. Résumé final
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -875,7 +875,7 @@ Structure obligatoire :
 
 ## 18. Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

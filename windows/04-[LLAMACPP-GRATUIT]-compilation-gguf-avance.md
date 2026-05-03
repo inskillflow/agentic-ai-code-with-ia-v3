@@ -33,7 +33,7 @@
 
 ## 1. Pourquoi compiler llama.cpp soi-même ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -65,7 +65,7 @@
 
 ## 2. Pré-requis
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -129,7 +129,7 @@ Rien de plus. Les optimisations AVX/AVX2 sont automatiques.
 
 ## 3. Cloner et compiler
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -185,7 +185,7 @@ La compilation prend 10 à 30 min sur Windows.
 
 ## 4. Vérifier la compilation
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -226,7 +226,7 @@ Test rapide :
 
 ## 5. Récupérer un modèle GGUF
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -266,7 +266,7 @@ dir *.gguf
 
 ## 6. Test 1 : `llama-cli` (one-shot)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -319,7 +319,7 @@ Sors avec `Ctrl+C`.
 
 ## 7. Test 2 : `llama-server` (API HTTP compatible OpenAI)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -375,7 +375,7 @@ L'UI web est dispo sur `http://127.0.0.1:8080` dans ton navigateur.
 
 ## 8. Mesurer la performance
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -414,7 +414,7 @@ Comparaison indicative pour Qwen2.5-Coder-7B Q6_K :
 
 ## 9. Mise à jour de llama.cpp
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -446,7 +446,7 @@ Si ça casse après une grosse mise à jour : `Remove-Item -Recurse -Force build
 
 ## 10. Cheatsheet
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -479,7 +479,7 @@ Si ça casse après une grosse mise à jour : `Remove-Item -Recurse -Force build
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -515,7 +515,7 @@ Si ça casse après une grosse mise à jour : `Remove-Item -Recurse -Force build
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

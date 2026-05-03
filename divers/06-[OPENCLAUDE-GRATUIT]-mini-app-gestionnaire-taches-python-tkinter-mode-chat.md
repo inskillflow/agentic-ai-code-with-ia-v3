@@ -52,7 +52,7 @@ Ce TP construit une mini application graphique de gestion de tâches en Python +
 
 ## 1. Contrat pédagogique : OpenClaude en mode chat
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -87,7 +87,7 @@ Avant de commencer, posez-vous bien ce contrat dans la tête :
 
 ## 2. Vérifier les pré-requis (Python, Tkinter, Git)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -165,7 +165,7 @@ Si Git manque : [git-scm.com/downloads](https://git-scm.com/downloads).
 
 ## 3. Créer le projet et l'initialiser avec Git
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -236,7 +236,7 @@ git config --global user.email "votre.email@example.com"
 
 ## 4. Lancer OpenClaude dans le bon dossier
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -286,7 +286,7 @@ Identique sur les trois OS. Si la commande n'est pas reconnue, fermez et rouvrez
 
 ## 5. Configurer OpenClaude pour utiliser Ollama
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -354,7 +354,7 @@ openclaude
 
 ## 6. Découvrir les slash commands utiles
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -402,7 +402,7 @@ pour voir la liste des commandes disponibles dans **votre** version. Voici les p
 
 ## 7. Pourquoi on n'utilise pas `/init`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -436,7 +436,7 @@ Avec OpenClaude + Ollama, `/init` produit souvent :
 
 ## 8. Créer `CLAUDE.md` à la main
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -537,7 +537,7 @@ git commit -m "Ajout des instructions projet CLAUDE.md"
 
 ## 9. Demander un plan à OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -589,7 +589,7 @@ Vous attendez une réponse du type :
 
 ## 10. Demander la version 1 du code et la coller dans `main.py`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -693,7 +693,7 @@ fenetre.mainloop()
 
 ## 11. Comprendre le code généré
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -740,7 +740,7 @@ fenetre.mainloop()
 
 ## 12. Tester et committer la version 1
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -799,7 +799,7 @@ git commit -m "Création de la version 1 (Tkinter)"
 
 ## 13. Amélioration : bouton « Effacer toutes les tâches »
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -866,7 +866,7 @@ git commit -m "Ajout du bouton Effacer toutes les tâches"
 
 ## 14. Amélioration : sauvegarde JSON persistante
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -1037,7 +1037,7 @@ git commit -m "Ajout sauvegarde JSON + .gitignore"
 
 ## 15. Procédures réutilisables (équivalent local des skills)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -1116,7 +1116,7 @@ OpenClaude vous renvoie le plan + le code, vous copiez-collez.
 
 ## 16. Tableau comparatif final
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -1153,7 +1153,7 @@ OpenClaude vous renvoie le plan + le code, vous copiez-collez.
 
 ## 17. À retenir
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -1192,7 +1192,7 @@ Avec OpenClaude + Ollama, **vous gardez le contrôle** parce que c'est vous qui 
 
 ## 18. Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

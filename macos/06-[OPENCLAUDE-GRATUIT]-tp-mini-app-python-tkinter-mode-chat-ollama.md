@@ -35,7 +35,7 @@
 
 ## 1. Comprendre le mode « chat » d'OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -70,7 +70,7 @@ C'est parfait pour apprendre : tu **comprends** chaque ligne, tu **lis** chaque 
 
 ## 2. Préparer l'environnement Python
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -131,7 +131,7 @@ export OPENAI_MODEL=qwen2.5-coder:7b   # ou autre modèle dans `ollama list`
 
 ## 3. Créer le dossier de projet
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -160,7 +160,7 @@ cd ~/projets/gestionnaire-taches
 
 ## 4. Lancer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -198,7 +198,7 @@ Si tu obtiens une réponse → c'est branché. Sinon, retour à l'**étape 2**.
 
 ## 5. Étape A — Squelette Tkinter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -266,7 +266,7 @@ Que dois-je corriger ?
 
 ## 6. Étape B — Ajouter une tâche
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -314,7 +314,7 @@ Tape « acheter du pain », clique « Ajouter ». La tâche apparaît.
 
 ## 7. Étape C — Supprimer une tâche
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -347,7 +347,7 @@ Applique, teste.
 
 ## 8. Étape D — Marquer comme faite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -380,7 +380,7 @@ Applique, teste.
 
 ## 9. Étape E — Persistance JSON
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -422,7 +422,7 @@ cat tasks.json
 
 ## 10. Workflow type avec OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -470,7 +470,7 @@ Comment l'éviter proprement ?
 
 ## 11. Bonus — Premier commit Git
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -514,7 +514,7 @@ git log --oneline
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -557,7 +557,7 @@ git log --oneline
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

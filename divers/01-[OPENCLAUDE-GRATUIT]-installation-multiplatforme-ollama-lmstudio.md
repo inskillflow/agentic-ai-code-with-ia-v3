@@ -21,7 +21,7 @@ Guide ultra-détaillé pour installer **OpenClaude** (un fork open-source gratui
 
 ## 1. C'est quoi OpenClaude ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -67,7 +67,7 @@ La grosse différence avec le vrai Claude Code : **OpenClaude accepte n'importe 
 
 ## 2. Architecture — comment tout s'imbrique
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -122,7 +122,7 @@ OpenClaude communique avec le backend via HTTP sur `localhost`. Aucun appel clou
 
 ## 3. Pré-requis (tous OS)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -190,7 +190,7 @@ Tu vas choisir **soit** LM Studio **soit** Ollama. Ce ne sont pas concurrents te
 
 ## 4. Méthode A — LM Studio (interface graphique)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -368,7 +368,7 @@ OpenClaude démarre, tu vois un prompt interactif. Direction la [section 7](#7-t
 
 ## 5. Méthode B — Ollama (ligne de commande)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -534,7 +534,7 @@ openclaude
 
 ## 6. Comment exporter les variables d'environnement
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -694,7 +694,7 @@ openclaude
 
 ## 7. Tester OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -802,7 +802,7 @@ OpenClaude lit le fichier, propose un diff, te demande confirmation, et applique
 
 ## 8. Choix du modèle recommandé
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -857,7 +857,7 @@ OpenClaude lit le fichier, propose un diff, te demande confirmation, et applique
 
 ## 9. Configuration globale OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -946,7 +946,7 @@ Pour le détail complet du troubleshooting de la config globale, voir [`docs/06-
 
 ## 10. Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -1076,7 +1076,7 @@ Si les 3 répondent OK, OpenClaude doit fonctionner. Sinon, le problème est sur
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

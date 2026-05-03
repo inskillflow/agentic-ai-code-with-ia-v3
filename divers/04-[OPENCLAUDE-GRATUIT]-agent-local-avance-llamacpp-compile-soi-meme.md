@@ -31,7 +31,7 @@ Pour les utilisateurs **avancés** qui veulent compiler `llama.cpp` eux-mêmes a
 
 ## 1. Pourquoi compiler llama.cpp soi-même
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -68,7 +68,7 @@ Pour les utilisateurs **avancés** qui veulent compiler `llama.cpp` eux-mêmes a
 
 ## 2. Pré-requis par OS
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -158,7 +158,7 @@ sudo pacman -S cuda    # si NVIDIA
 
 ## 3. Pièges Windows à connaître
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -245,7 +245,7 @@ Ni `2>&1`, ni `| Out-Host`, ni `cmd /c` ne suffisent en PS 5.1.
 
 ## 4. Compiler llama.cpp avec accélération GPU
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -407,7 +407,7 @@ cmake -B build -DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=89 -DCMAKE_BUILD_TYPE=R
 
 ## 5. Télécharger un modèle GGUF
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -503,7 +503,7 @@ Documenté dans la section [Troubleshooting](#11-troubleshooting).
 
 ## 6. Lancer llama-server
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -592,7 +592,7 @@ Tu reçois un JSON avec `local-gemma` listé.
 
 ## 7. Installer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -624,7 +624,7 @@ Pour les détails (permissions Mac/Linux, prefix npm), voir [`01-[OPENCLAUDE-GRA
 
 ## 8. Configuration et lancement de l'agent
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -675,7 +675,7 @@ Tu arrives dans le chat OpenClaude.
 
 ## 9. Tester l'agent
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -734,7 +734,7 @@ OpenClaude propose `pwd` + `ls` (ou équivalents Windows) et te demande confirma
 
 ## 10. Tuning et optimisation
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -812,7 +812,7 @@ $SERVER -m modele.gguf \
 
 ## 11. Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -900,7 +900,7 @@ Si ces deux requêtes répondent → le serveur fonctionne, le problème est cô
 
 ## 12. Stack technique complète
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -984,7 +984,7 @@ openclaude
 
 ## Liens utiles
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

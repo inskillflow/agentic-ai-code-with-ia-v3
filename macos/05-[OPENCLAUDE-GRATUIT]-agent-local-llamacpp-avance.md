@@ -32,7 +32,7 @@
 
 ## 1. Architecture cible
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -68,7 +68,7 @@ L'avantage : **aucun service tiers**, tout en local sur Apple Silicon.
 
 ## 2. Lancer `llama-server` en mode optimisé
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -116,7 +116,7 @@ Laisse ce terminal ouvert.
 
 ## 3. Configurer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -152,7 +152,7 @@ openclaude
 
 ## 4. Premier test
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -189,7 +189,7 @@ Pour passer du cas 3 à 2 ou 1, voir la section suivante sur le choix du modèle
 
 ## 5. Choisir un bon modèle pour le tool-calling
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -230,7 +230,7 @@ Les templates sont dans `models/templates/` du dépôt llama.cpp.
 
 ## 6. Optimisations clés du serveur (Metal)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -277,7 +277,7 @@ Les templates sont dans `models/templates/` du dépôt llama.cpp.
 
 ## 7. Script de lancement réutilisable
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -336,7 +336,7 @@ Lance :
 
 ## 8. Service launchd (optionnel)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -399,7 +399,7 @@ launchctl unload ~/Library/LaunchAgents/com.user.llamaserver.plist
 
 ## 9. Limites du tool-calling avec un LLM local
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -435,7 +435,7 @@ Même avec le meilleur modèle local, attends-toi à :
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -470,7 +470,7 @@ Même avec le meilleur modèle local, attends-toi à :
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

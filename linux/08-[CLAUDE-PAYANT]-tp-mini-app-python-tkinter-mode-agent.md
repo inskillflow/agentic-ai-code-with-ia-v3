@@ -38,7 +38,7 @@
 
 ## 1. Pourquoi cette version payante ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -73,7 +73,7 @@
 
 ## 2. Coûts indicatifs
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -110,7 +110,7 @@ Deux modèles de tarification :
 
 ## 3. Installer Claude Code CLI
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -161,7 +161,7 @@ claude --help
 
 ## 4. Authentification
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -201,7 +201,7 @@ Persistant via `~/.bashrc` ou `~/.zshrc`.
 
 ## 5. Créer le dossier projet et l'initialiser
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -241,7 +241,7 @@ Une fois dans la session interactive `claude`, tape :
 
 ## 6. Le fichier `CLAUDE.md` (mémoire du projet)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -302,7 +302,7 @@ Sauvegarde. Maintenant Claude connaît ton projet.
 
 ## 7. Étape A — Squelette Tkinter (laisse Claude faire)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -348,7 +348,7 @@ Une fenêtre doit s'ouvrir.
 
 ## 8. Étape B à E — Construire la mini-app
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -398,7 +398,7 @@ Mets à jour CLAUDE.md pour refléter la nouvelle structure.
 
 ## 9. Slash commands utiles
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -435,7 +435,7 @@ Mets à jour CLAUDE.md pour refléter la nouvelle structure.
 
 ## 10. Mode plan, diff et permissions
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -485,7 +485,7 @@ Pour un débutant : **garde tout sur "ask"**. Pour un dev pro : auto-edit OK, au
 
 ## 11. Bonus — Premier commit Git
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -531,7 +531,7 @@ git log --oneline
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -567,7 +567,7 @@ git log --oneline
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

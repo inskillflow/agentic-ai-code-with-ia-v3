@@ -32,7 +32,7 @@
 
 ## 1. Architecture cible
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -68,7 +68,7 @@ L'avantage : **aucun service tiers**, tout en local, et tu choisis ton modèle /
 
 ## 2. Lancer `llama-server` en mode optimisé
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -116,7 +116,7 @@ Laisse ce terminal ouvert.
 
 ## 3. Configurer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -152,7 +152,7 @@ openclaude
 
 ## 4. Premier test
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -189,7 +189,7 @@ Pour passer du cas 3 à 2 ou 1, voir la section suivante sur le choix du modèle
 
 ## 5. Choisir un bon modèle pour le tool-calling
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -235,7 +235,7 @@ Les noms typiques : `qwen2.5-coder.jinja`, `llama-3.3.jinja`, `mistral.jinja`.
 
 ## 6. Optimisations clés du serveur
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -282,7 +282,7 @@ Les noms typiques : `qwen2.5-coder.jinja`, `llama-3.3.jinja`, `mistral.jinja`.
 
 ## 7. Script de lancement réutilisable
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -341,7 +341,7 @@ Lance :
 
 ## 8. Service systemd (optionnel)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -392,7 +392,7 @@ journalctl --user -u llama-server.service -f
 
 ## 9. Limites du tool-calling avec un LLM local
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -428,7 +428,7 @@ Même avec le meilleur modèle local, attends-toi à :
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -462,7 +462,7 @@ Même avec le meilleur modèle local, attends-toi à :
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

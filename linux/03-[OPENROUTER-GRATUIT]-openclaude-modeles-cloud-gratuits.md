@@ -31,7 +31,7 @@
 
 ## 1. Qu'est-ce qu'OpenRouter ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -62,7 +62,7 @@
 
 ## 2. Important : ce qui est *vraiment* gratuit
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -102,7 +102,7 @@ OpenRouter offre aussi ~5$ de crédits gratuits initiaux pour tester les modèle
 
 ## 3. Créer un compte OpenRouter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -132,7 +132,7 @@ Aucune carte bancaire n'est requise pour utiliser **uniquement** les modèles `:
 
 ## 4. Générer une clé API
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -165,7 +165,7 @@ Stocke-la dans un endroit sûr.
 
 ## 5. Configurer OpenClaude pour OpenRouter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -209,7 +209,7 @@ openclaude
 
 ## 6. Choisir un modèle gratuit recommandé
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -243,7 +243,7 @@ Pour switcher de modèle, il suffit de changer `OPENAI_MODEL` et de relancer `op
 
 ## 7. Variables d'environnement permanentes
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -295,7 +295,7 @@ set -a; source .env; set +a; openclaude
 
 ## 8. Premier test
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -343,7 +343,7 @@ curl https://openrouter.ai/api/v1/chat/completions \
 
 ## 9. Quotas et limites des modèles `:free`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -377,7 +377,7 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 
 ## 10. Comparaison Ollama local vs OpenRouter cloud gratuit
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -414,7 +414,7 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -448,7 +448,7 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

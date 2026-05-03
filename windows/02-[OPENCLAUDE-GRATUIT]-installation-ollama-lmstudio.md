@@ -30,7 +30,7 @@
 
 ## 1. Qu'est-ce qu'OpenClaude ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -71,7 +71,7 @@ La grosse différence avec le vrai Claude Code : **OpenClaude accepte n'importe 
 
 ## 2. Installer Node.js
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -119,7 +119,7 @@ Après installation, **ferme et rouvre PowerShell** pour recharger le PATH.
 
 ## 3. Installer OpenClaude (npm global)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -158,7 +158,7 @@ openclaude --help
 
 ## 4. Configurer pour Ollama (variables d'environnement)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -209,7 +209,7 @@ openclaude
 
 ## 5. Installer LM Studio (alternative à Ollama)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -244,7 +244,7 @@ Dans LM Studio :
 
 ## 6. Configurer pour LM Studio
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -277,7 +277,7 @@ openclaude
 
 ## 7. Variables d'environnement permanentes
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -353,7 +353,7 @@ openclaude
 
 ## 8. Premier test d'OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -398,7 +398,7 @@ type hello.py
 
 ## 9. Configuration globale `%USERPROFILE%\.claude.json`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -464,7 +464,7 @@ Pour basculer, change `activeProvider` ou utilise `/agents` dans OpenClaude.
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -515,7 +515,7 @@ echo "$env:OPENAI_BASE_URL / $env:OPENAI_MODEL"
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

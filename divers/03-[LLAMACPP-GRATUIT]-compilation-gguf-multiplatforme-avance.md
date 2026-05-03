@@ -31,7 +31,7 @@
 
 ## 1. C'est quoi CMake et pourquoi compiler ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -73,7 +73,7 @@ CMakeLists.txt  →  CMake (génère)  →  Makefile / projet VS  →  compilate
 
 ## 2. Pré-requis (Windows / macOS / Linux)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -162,7 +162,7 @@ nvcc --version    # uniquement si tu vises CUDA
 
 ## Étape 1 — Cloner `llama.cpp`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -201,7 +201,7 @@ Durée : 30 s à 1 min.
 
 ## Étape 2 — Compiler avec CMake (5–15 min)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -291,7 +291,7 @@ Voir [Troubleshooting](#troubleshooting) en bas du fichier.
 
 ## Étape 3 — Récupérer un `.gguf` depuis Hugging Face
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -375,7 +375,7 @@ $env:HF_HUB_DISABLE_XET = "1"
 
 ## Étape 4 — Installer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -417,7 +417,7 @@ openclaude --version
 
 ## Étape 5 — Lancer le serveur llama.cpp
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -499,7 +499,7 @@ curl http://127.0.0.1:8090/v1/models -H "Authorization: Bearer localdev"
 
 ## Étape 6 — Lancer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -549,7 +549,7 @@ L'agent doit créer le fichier dans ton dossier courant.
 
 ## Étape 7 — Arrêter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -590,7 +590,7 @@ pkill -f llama-server
 
 ## Sessions suivantes
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -637,7 +637,7 @@ pkill -f llama-server
 
 ## Récap ultra-condensé
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -675,7 +675,7 @@ pkill -f llama-server
 
 ## Architecture finale
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -725,7 +725,7 @@ pkill -f llama-server
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -793,7 +793,7 @@ pkill -f llama-server
 
 ## Pour aller plus loin
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

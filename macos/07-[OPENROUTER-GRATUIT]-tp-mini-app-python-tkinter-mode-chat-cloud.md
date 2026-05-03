@@ -39,7 +39,7 @@
 
 ## 1. Quand préférer OpenRouter à Ollama ?
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -73,7 +73,7 @@
 
 ## 2. Vérifier ton accès OpenRouter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -111,7 +111,7 @@ Tu dois voir un JSON listant les modèles. Si erreur 401 → clé invalide, reto
 
 ## 3. Préparer l'environnement Python
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -145,7 +145,7 @@ brew install python-tk
 
 ## 4. Créer le dossier de projet
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -174,7 +174,7 @@ cd ~/projets/gestionnaire-taches-cloud
 
 ## 5. Configurer OpenClaude pour OpenRouter
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -215,7 +215,7 @@ echo "$OPENAI_MODEL"
 
 ## 6. Lancer OpenClaude
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -251,7 +251,7 @@ Tu dois voir une réponse cohérente identifiant le modèle.
 
 ## 7. Étape A à E — Construction de la mini-app
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -334,7 +334,7 @@ Donne-moi les deux classes.
 
 ## 8. Astuces pour économiser tes quotas `:free`
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -378,7 +378,7 @@ export OPENAI_MODEL=qwen2.5-coder:7b
 
 ## 9. Sécurité de la clé API
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -438,7 +438,7 @@ export OPENAI_API_KEY=$(security find-generic-password -a "$USER" -s openrouter 
 
 ## 10. Bonus — Premier commit Git
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -472,7 +472,7 @@ git log --oneline
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -505,7 +505,7 @@ git log --oneline
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 

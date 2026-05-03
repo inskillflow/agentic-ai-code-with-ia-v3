@@ -31,7 +31,7 @@
 
 ## Étape 1 — Installer Ollama
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -72,7 +72,7 @@ Puis lance Ollama depuis le menu Démarrer.
 
 ## Étape 2 — Vérifier que ça marche
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -104,7 +104,7 @@ Tu dois voir `ollama version is 0.x.x`. Si non → ferme et rouvre PowerShell po
 
 ## Étape 3 — Vérifier que le serveur tourne
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -149,7 +149,7 @@ ollama serve
 
 ## Étape 4 — Méthode A : modèle de la bibliothèque Ollama
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -198,7 +198,7 @@ Tape ta question. Sors avec `/bye`.
 
 ## Étape 5 — Méthode B : modèle custom depuis Hugging Face
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -274,7 +274,7 @@ ollama run gemma-local
 
 ## Étape 6 — Modelfile avec paramètres (optionnel)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -316,7 +316,7 @@ ollama create gemma-local -f Modelfile
 
 ## Étape 7 — Cheatsheet des commandes utiles
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -353,7 +353,7 @@ ollama create gemma-local -f Modelfile
 
 ## Étape 8 — Dans le chat Ollama (commandes slash)
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -386,7 +386,7 @@ ollama create gemma-local -f Modelfile
 
 ## Étape 9 — Tester l'API depuis un autre programme
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -420,7 +420,7 @@ Invoke-RestMethod -Uri "http://127.0.0.1:11434/v1/chat/completions" `
 
 ## Récap : le flux complet en une page
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -460,7 +460,7 @@ Modèle custom (HuggingFace) :
 
 ## Troubleshooting
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
@@ -496,7 +496,7 @@ Modèle custom (HuggingFace) :
 
 ## Suite
 
-<details open>
+<details>
 <summary><b>Cliquer pour replier / deplier cette section</b></summary>
 
 
