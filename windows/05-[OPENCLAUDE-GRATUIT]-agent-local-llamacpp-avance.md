@@ -33,6 +33,10 @@
 
 ## 1. Architecture cible
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 ```
 ┌──────────────────────┐  HTTP OpenAI-compatible  ┌───────────────────────┐
 │      OpenClaude      │ ───────────────────────► │   llama-server.exe    │
@@ -45,11 +49,29 @@
 
 L'avantage : **aucun service tiers**, tout en local, et tu choisis ton modèle / quantization / paramètres.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Lancer `llama-server.exe` en mode optimisé
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 cd $env:USERPROFILE\llama.cpp
@@ -76,11 +98,29 @@ main: server is listening on 127.0.0.1:8080 - starting the main loop
 
 Laisse cette PowerShell ouverte.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Configurer OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans une **autre** PowerShell :
 
@@ -94,11 +134,29 @@ openclaude
 
 > `OPENAI_MODEL` peut être n'importe quel nom — `llama-server` ignore le champ et sert toujours le modèle qu'il a chargé.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Premier test
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans OpenClaude :
 
@@ -113,11 +171,29 @@ Trois cas possibles :
 
 Pour passer du cas 3 à 2 ou 1, voir la section suivante sur le choix du modèle.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Choisir un bon modèle pour le tool-calling
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Tous les LLM locaux **ne supportent pas bien** le tool-calling. Les meilleurs en ce moment :
 
@@ -134,11 +210,29 @@ Tous les LLM locaux **ne supportent pas bien** le tool-calling. Les meilleurs en
 
 Les templates sont dans `models\templates\` du dépôt llama.cpp.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Optimisations clés du serveur
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 .\build\bin\Release\llama-server.exe `
@@ -163,11 +257,29 @@ Les templates sont dans `models\templates\` du dépôt llama.cpp.
 | `--flash-attn` | Attention optimisée |
 | `--jinja` | Active le tool-calling via template Jinja |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Script de lancement réutilisable
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Crée `$env:USERPROFILE\bin\llama-openclaude-server.ps1` :
 
@@ -198,11 +310,29 @@ Lance :
 & "$env:USERPROFILE\bin\llama-openclaude-server.ps1"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Tâche planifiée Windows (optionnel)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Pour démarrer automatiquement le serveur à l'ouverture de session :
 
@@ -230,11 +360,29 @@ Désactiver :
 Unregister-ScheduledTask -TaskName "LlamaServerForOpenClaude" -Confirm:$false
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Limites du tool-calling avec un LLM local
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Même avec le meilleur modèle local, attends-toi à :
 
@@ -248,11 +396,29 @@ Même avec le meilleur modèle local, attends-toi à :
 3. Pour les TPs étudiants, **n'attends pas du tool-calling parfait**. Le mode chat (cf. tuto 06) est plus prévisible avec un local 7B.
 4. Pour du vrai dev agentique fiable → Claude Code officiel (cf. tuto 08).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Symptôme | Cause | Correctif |
 |----------|-------|-----------|
@@ -266,14 +432,46 @@ Même avec le meilleur modèle local, attends-toi à :
 | `.dll not found` au lancement de `llama-server.exe` | DLLs CUDA absentes du PATH | Ajoute `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.x\bin` au PATH |
 | Pare-feu bloque la première exécution | Windows Defender | Autorise « Réseaux privés » dans la fenêtre qui apparaît |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 - [`06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md`](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md) — TP mini-app en mode chat (plus prévisible)
 - [`08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md`](./08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md) — TP avec Claude Code officiel pour comparer le mode agent fiable
 - [Documentation llama-server](https://github.com/ggml-org/llama.cpp/blob/master/examples/server/README.md)
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

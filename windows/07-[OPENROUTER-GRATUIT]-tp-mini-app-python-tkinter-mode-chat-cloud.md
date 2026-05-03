@@ -40,6 +40,10 @@
 
 ## 1. Quand préférer OpenRouter à Ollama ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 | Cas | Préfère |
 |-----|---------|
 | Laptop sans GPU NVIDIA / iGPU Intel | **OpenRouter** (Llama 405B sur cloud > 7B sur ton CPU) |
@@ -50,11 +54,29 @@
 | Tu manipules du code confidentiel | **Ollama** (rien ne sort) |
 | Tu as une RTX 3060+ | **Ollama** (Qwen 14B local rapide) |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Vérifier ton accès OpenRouter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 echo $env:OPENAI_API_KEY     # doit commencer par sk-or-v1-
@@ -69,11 +91,29 @@ curl.exe -s https://openrouter.ai/api/v1/models -H "Authorization: Bearer $env:O
 
 Tu dois voir un JSON listant les modèles. Si erreur 401 → clé invalide, retour au [tuto 03](./03-[OPENROUTER-GRATUIT]-openclaude-modeles-cloud-gratuits.md).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Préparer l'environnement Python
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 python --version
@@ -87,22 +127,58 @@ winget install Python.Python.3.12
 
 > **Important** : coche « Add Python to PATH » et garde Tcl/Tk dans les options.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Créer le dossier de projet
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 mkdir $env:USERPROFILE\projets\gestionnaire-taches-cloud -Force
 cd $env:USERPROFILE\projets\gestionnaire-taches-cloud
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Configurer OpenClaude pour OpenRouter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Pour ce TP, on choisit un modèle qui code bien :
 
@@ -121,11 +197,29 @@ echo $env:OPENAI_BASE_URL
 echo $env:OPENAI_MODEL
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Lancer OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 openclaude
@@ -139,11 +233,29 @@ Bonjour ! Quel modèle exact es-tu et qui t'a entraîné ?
 
 Tu dois voir une réponse cohérente identifiant le modèle.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Étape A à E — Construction de la mini-app
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 > Le déroulé est **identique au [tuto 06](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md)** mais avec un meilleur modèle, donc tu peux te permettre des prompts plus ambitieux.
 
@@ -204,11 +316,29 @@ et garde TaskApp pour l'UI uniquement.
 Donne-moi les deux classes.
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Astuces pour économiser tes quotas `:free`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenRouter limite à ~20 req/min et ~200 req/jour sur les modèles `:free`.
 
@@ -230,11 +360,29 @@ $env:OPENAI_BASE_URL = "http://127.0.0.1:11434/v1"
 $env:OPENAI_MODEL = "qwen2.5-coder:7b"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Sécurité de la clé API
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 > ⚠️ Ta clé `sk-or-v1-...` est un secret. Ne la commit **jamais** dans Git.
 
@@ -272,11 +420,29 @@ cmdkey /generic:openrouter /user:api /pass:"sk-or-v1-..."
 # $env:OPENAI_API_KEY = (Get-StoredCredential -Target openrouter).Password | ConvertFrom-SecureString -AsPlainText
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Bonus — Premier commit Git
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```powershell
 cd $env:USERPROFILE\projets\gestionnaire-taches-cloud
@@ -288,11 +454,29 @@ git commit -m "TP mini-app cloud (OpenRouter free) : gestionnaire de tâches Tki
 git log --oneline
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Symptôme | Cause | Correctif |
 |----------|-------|-----------|
@@ -305,13 +489,45 @@ git log --oneline
 | Erreur SSL/TLS | Proxy d'entreprise | Configure `$env:HTTP_PROXY` et `$env:HTTPS_PROXY` |
 | Accents cassés | Console CP1252 | `chcp 65001` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 - [`06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md`](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md) — la version locale (Ollama, sans quota, sans internet)
 - [`08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md`](./08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md) — la version « pro » avec Claude Code en mode agent
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

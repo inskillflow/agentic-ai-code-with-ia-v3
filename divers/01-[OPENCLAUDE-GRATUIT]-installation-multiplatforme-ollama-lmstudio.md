@@ -21,6 +21,10 @@ Guide ultra-détaillé pour installer **OpenClaude** (un fork open-source gratui
 
 ## 1. C'est quoi OpenClaude ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 **OpenClaude** est un fork open-source de **Claude Code** (le CLI agentique d'Anthropic). C'est un **agent terminal** capable de :
 
 - Discuter avec toi en langage naturel
@@ -43,11 +47,29 @@ La grosse différence avec le vrai Claude Code : **OpenClaude accepte n'importe 
 - npm : [`@gitlawb/openclaude`](https://www.npmjs.com/package/@gitlawb/openclaude)
 - GitHub : voir le lien `repository` sur la page npm
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Architecture — comment tout s'imbrique
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```
 ┌────────────┐         ┌───────────────────┐         ┌────────────────────┐
@@ -80,11 +102,29 @@ Les 3 briques :
 
 OpenClaude communique avec le backend via HTTP sur `localhost`. Aucun appel cloud.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Pré-requis (tous OS)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 3.1 Node.js 18+ minimum
 
@@ -130,11 +170,29 @@ Tu vas choisir **soit** LM Studio **soit** Ollama. Ce ne sont pas concurrents te
 
 **Conseil** : si c'est ta première fois, prends **LM Studio**. Si tu es à l'aise en terminal et veux scripter, prends **Ollama**.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Méthode A — LM Studio (interface graphique)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 4.1 Installation de LM Studio
 
@@ -290,11 +348,29 @@ openclaude
 
 OpenClaude démarre, tu vois un prompt interactif. Direction la [section 7](#7-tester-openclaude) pour les premiers tests.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Méthode B — Ollama (ligne de commande)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 5.1 Installation d'Ollama
 
@@ -438,11 +514,29 @@ export OPENAI_MODEL=qwen2.5:7b
 openclaude
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Comment exporter les variables d'environnement
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 6.1 Variables temporaires (uniquement pour la session courante)
 
@@ -580,11 +674,29 @@ Get-Content .env | ForEach-Object {
 openclaude
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Tester OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Une fois OpenClaude lancé, tu vois un prompt interactif. Voici 4 tests dans l'ordre, du plus simple au plus complet.
 
@@ -670,11 +782,29 @@ refactor le fichier test.py : renomme la fonction en `maximum`, ajoute des type 
 
 OpenClaude lit le fichier, propose un diff, te demande confirmation, et applique. C'est ça la magie d'un agent local.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Choix du modèle recommandé
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Selon la taille (RAM/VRAM disponible)
 
@@ -707,11 +837,29 @@ OpenClaude lit le fichier, propose un diff, te demande confirmation, et applique
 
 (Valeurs indicatives, varient selon quantization et contexte)
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Configuration globale OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenClaude stocke sa config dans :
 
@@ -778,11 +926,29 @@ Pour basculer, change `activeProvider` ou utilise une commande slash dans OpenCl
 
 Pour le détail complet du troubleshooting de la config globale, voir [`docs/06-troubleshooting-config-globale-openclaude.md`](../06-troubleshooting-config-globale-openclaude.md).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Erreurs OpenClaude
 
@@ -890,14 +1056,48 @@ echo "$OPENAI_BASE_URL / $OPENAI_MODEL"
 
 Si les 3 répondent OK, OpenClaude doit fonctionner. Sinon, le problème est sur la commande qui a échoué.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 - [`02-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md`](./02-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md) — Ollama en détail, GGUF customs
 - [`03-[LLAMACPP-GRATUIT]-compilation-gguf-multiplatforme-avance.md`](./03-[LLAMACPP-GRATUIT]-compilation-gguf-multiplatforme-avance.md) — compiler `llama.cpp` à la main
 - [`04-[OPENCLAUDE-GRATUIT]-agent-local-avance-llamacpp-compile-soi-meme.md`](./04-[OPENCLAUDE-GRATUIT]-agent-local-avance-llamacpp-compile-soi-meme.md) — agent local avancé OpenClaude + llama.cpp
 - [`05-[CLAUDE-PAYANT]-mini-app-gestionnaire-taches-python-tkinter-mode-agent.md`](./05-[CLAUDE-PAYANT]-mini-app-gestionnaire-taches-python-tkinter-mode-agent.md) — TP payant avec Claude officiel
 - [`06-[OPENCLAUDE-GRATUIT]-mini-app-gestionnaire-taches-python-tkinter-mode-chat.md`](./06-[OPENCLAUDE-GRATUIT]-mini-app-gestionnaire-taches-python-tkinter-mode-chat.md) — TP gratuit avec OpenClaude (mode chat)
+
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

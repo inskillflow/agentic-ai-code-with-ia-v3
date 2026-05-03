@@ -29,6 +29,10 @@
 
 ## 1. Qu'est-ce qu'OpenClaude ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 **OpenClaude** est un fork open source de **Claude Code** (le CLI agentique d'Anthropic). C'est un **agent terminal** capable de :
 
 - discuter avec toi en langage naturel ;
@@ -46,11 +50,29 @@ La grosse différence avec le vrai Claude Code : **OpenClaude accepte n'importe 
 
 > **Limite** : avec un modèle local, le « tool-calling » qui permet à OpenClaude de modifier des fichiers est **moins fiable** qu'avec Claude officiel. Pour les TPs, on privilégie le **mode chat** (copier-coller).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Installer Node.js
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenClaude est un package npm, il te faut Node.js 18+.
 
@@ -75,11 +97,29 @@ Télécharge la version LTS sur [nodejs.org](https://nodejs.org/), ouvre le `.pk
 
 Après installation, **ferme et rouvre ton terminal**.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Installer OpenClaude (npm global)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 npm install -g @gitlawb/openclaude
@@ -110,11 +150,29 @@ openclaude --version
 openclaude --help
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Configurer pour Ollama (variables d'environnement)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenClaude lit 3 variables d'environnement OpenAI-compatibles.
 
@@ -141,11 +199,29 @@ Lance OpenClaude :
 openclaude
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Installer LM Studio (alternative à Ollama)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 LM Studio = interface graphique pour LLMs locaux. Très bien pour découvrir.
 
@@ -160,11 +236,29 @@ Dans LM Studio :
 2. Onglet **Local Server** (icône `>_`) → choisis le modèle → **Start Server** (port 1234 par défaut).
 3. **Note** le nom exact du modèle qui s'affiche en haut, par exemple `qwen2.5-7b-instruct`.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Configurer pour LM Studio
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 export OPENAI_API_KEY=lmstudio
@@ -175,11 +269,29 @@ openclaude
 
 Sur macOS, `localhost` et `127.0.0.1` sont équivalents.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Variables d'environnement permanentes
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Le shell par défaut de macOS récent est **zsh** (depuis Catalina).
 
@@ -210,11 +322,29 @@ EOF
 set -a; source .env; set +a; openclaude
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Premier test d'OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Une fois lancé, tu vois un prompt interactif. Tape :
 
@@ -237,11 +367,29 @@ cat hello.py
 
 > Avec un modèle local, le tool-calling peut échouer. Si OpenClaude te répond du code mais ne crée pas le fichier, copie-le manuellement. C'est le mode chat (cf. tuto 06).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Configuration globale `~/.claude.json`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenClaude stocke aussi sa config dans `~/.claude.json`. Cette config **prend le dessus sur les variables d'environnement** une fois enregistrée.
 
@@ -285,11 +433,29 @@ cat ~/.claude.json
 
 Pour basculer, change `activeProvider` ou utilise `/agents` dans OpenClaude.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Erreurs OpenClaude
 
@@ -316,14 +482,46 @@ openclaude --version
 echo "$OPENAI_BASE_URL / $OPENAI_MODEL"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 - [`03-[OPENROUTER-GRATUIT]-openclaude-modeles-cloud-gratuits.md`](./03-[OPENROUTER-GRATUIT]-openclaude-modeles-cloud-gratuits.md) — alternative cloud gratuite si ton Mac est limité
 - [`04-[LLAMACPP-GRATUIT]-compilation-gguf-avance.md`](./04-[LLAMACPP-GRATUIT]-compilation-gguf-avance.md) — alternative avancée à Ollama (Metal)
 - [`06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md`](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md) — premier TP avec OpenClaude + Ollama
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

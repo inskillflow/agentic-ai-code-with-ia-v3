@@ -35,6 +35,10 @@
 
 ## 1. Comprendre le mode « chat » d'OpenClaude
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 Avec un LLM local (Ollama Qwen 7B), le tool-calling d'OpenClaude est **peu fiable**. On utilise donc OpenClaude comme un **chatbot de code** :
 
 | Toi | OpenClaude |
@@ -46,11 +50,29 @@ Avec un LLM local (Ollama Qwen 7B), le tool-calling d'OpenClaude est **peu fiabl
 
 C'est parfait pour apprendre : tu **comprends** chaque ligne, tu **lis** chaque erreur. Pas de magie noire.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Préparer l'environnement Python
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Vérifier Python et Tkinter
 
@@ -89,22 +111,58 @@ export OPENAI_BASE_URL=http://127.0.0.1:11434/v1
 export OPENAI_MODEL=qwen2.5-coder:7b   # ou autre modèle dans `ollama list`
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Créer le dossier de projet
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 mkdir -p ~/projets/gestionnaire-taches
 cd ~/projets/gestionnaire-taches
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Lancer OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans le dossier du projet :
 
@@ -120,11 +178,29 @@ bonjour, dis-moi en une ligne quel modèle tu utilises
 
 Si tu obtiens une réponse → c'est branché. Sinon, retour à l'**étape 2**.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Étape A — Squelette Tkinter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande à OpenClaude
 
@@ -170,11 +246,29 @@ J'ai cette erreur quand je lance python3 main.py :
 Que dois-je corriger ?
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Étape B — Ajouter une tâche
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande
 
@@ -200,11 +294,29 @@ python3 main.py
 
 Tape « acheter du pain », clique « Ajouter ». La tâche apparaît.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Étape C — Supprimer une tâche
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande
 
@@ -215,11 +327,29 @@ Si rien n'est sélectionné, n'affiche pas d'erreur, ne fais rien.
 
 Applique, teste.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Étape D — Marquer comme faite
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande
 
@@ -230,11 +360,29 @@ par "[X] ". Si elle est déjà préfixée, retire le préfixe (toggle).
 
 Applique, teste.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Étape E — Persistance JSON
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande
 
@@ -254,11 +402,29 @@ Vérifie le fichier :
 cat tasks.json
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Workflow type avec OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Demande de fonctionnalité
 
@@ -284,11 +450,29 @@ Comment l'éviter proprement ?
 
 > **Astuce** : si OpenClaude te donne du code qui « écrase » trop de choses, arrête et redemande : *« réécris uniquement la méthode add_task, pas toute la classe »*.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 11. Bonus — Premier commit Git
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 cd ~/projets/gestionnaire-taches
@@ -310,11 +494,29 @@ git log --oneline
 
 > Le `.DS_Store` est un fichier de métadonnées créé par le Finder macOS — toujours l'ignorer.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Symptôme | Cause | Correctif |
 |----------|-------|-----------|
@@ -335,13 +537,45 @@ git log --oneline
 | `/provider` | Change le backend |
 | `Ctrl+C` puis `Ctrl+C` | Quitte OpenClaude |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 - [`07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md`](./07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md) — refais le TP avec OpenRouter cloud (modèle plus puissant, sans pression sur ta RAM unifiée)
 - [`08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md`](./08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md) — refais le TP avec Claude Code officiel en mode agent
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

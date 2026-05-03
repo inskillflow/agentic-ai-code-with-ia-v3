@@ -52,6 +52,10 @@ Ce TP construit une mini application graphique de gestion de tâches en Python +
 
 ## 1. Contrat pédagogique : OpenClaude en mode chat
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 Avant de commencer, posez-vous bien ce contrat dans la tête :
 
 | Ce que ce TP attend | Ce que ce TP n'attend pas |
@@ -63,11 +67,29 @@ Avant de commencer, posez-vous bien ce contrat dans la tête :
 
 > **Pourquoi ce mode chat ?** Avec un modèle local (Ollama), le « tool-calling » qui permet à OpenClaude de modifier des fichiers tout seul **n'est pas fiable**. Le modèle se trompe d'outil, abandonne au milieu, ou écrit n'importe où. Le mode copier-coller est plus lent mais **toujours fiable** et plus pédagogique.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Vérifier les pré-requis (Python, Tkinter, Git)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 2.1 Python
 
@@ -123,11 +145,29 @@ Une petite fenêtre Tk doit s'ouvrir. Fermez-la.
 
 Si Git manque : [git-scm.com/downloads](https://git-scm.com/downloads).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Créer le projet et l'initialiser avec Git
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 3.1 Créer le dossier
 
@@ -176,11 +216,29 @@ git config --global user.name "Votre Nom"
 git config --global user.email "votre.email@example.com"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Lancer OpenClaude dans le bon dossier
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 > **Critique** : OpenClaude ne « voit » que le dossier dans lequel il est lancé. Si vous le démarrez ailleurs, il ne trouvera pas `main.py` ni `CLAUDE.md`.
 
@@ -208,11 +266,29 @@ openclaude
 
 Identique sur les trois OS. Si la commande n'est pas reconnue, fermez et rouvrez le terminal (le PATH n'a pas été rechargé).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Configurer OpenClaude pour utiliser Ollama
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Il y a deux méthodes : **slash command** dans OpenClaude, ou **variables d'environnement** avant de le lancer. La seconde est plus fiable.
 
@@ -258,11 +334,29 @@ openclaude
 
 > **Différence Linux/Mac vs Windows** : sur bash/zsh on utilise `export VAR=val`, sur PowerShell `$env:VAR="val"`, sur cmd `set VAR=val`. Ces variables ne durent que le temps de la session.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Découvrir les slash commands utiles
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans OpenClaude, tapez :
 
@@ -288,11 +382,29 @@ pour voir la liste des commandes disponibles dans **votre** version. Voici les p
 | `/diff` | Affiche les changements | **Peu fiable** → on utilise `git diff` |
 | `/plan` | Mode planification | **Peu fiable** → on rédige le prompt à la main |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Pourquoi on n'utilise pas `/init`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Avec Claude Code officiel, `/init` génère un bon `CLAUDE.md` adapté au projet.
 
@@ -304,11 +416,29 @@ Avec OpenClaude + Ollama, `/init` produit souvent :
 
 **Solution** : on écrit `CLAUDE.md` à la main. C'est plus rapide et 100 % adapté au TP.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Créer `CLAUDE.md` à la main
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 8.1 Créer le fichier vide
 
@@ -387,11 +517,29 @@ git add CLAUDE.md
 git commit -m "Ajout des instructions projet CLAUDE.md"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Demander un plan à OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans la session OpenClaude, tapez :
 
@@ -421,11 +569,29 @@ Vous attendez une réponse du type :
 
 > **Drapeau rouge** : si le plan mentionne React, Flask, Django, FastAPI ou une base de données, **arrêtez-le** : « Non. Respecte CLAUDE.md. Python + Tkinter uniquement. »
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Demander la version 1 du code et la coller dans `main.py`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 10.1 Demander le code
 
@@ -507,11 +673,29 @@ tk.Button(fenetre, text="Supprimer", width=25,
 fenetre.mainloop()
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 11. Comprendre le code généré
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 11.1 Imports
 
@@ -536,11 +720,29 @@ fenetre.mainloop()
 
 `fenetre.mainloop()` est **obligatoire** : sans elle, la fenêtre s'ouvre puis se ferme aussitôt.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 12. Tester et committer la version 1
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 12.1 Lancer
 
@@ -577,11 +779,29 @@ git add main.py
 git commit -m "Création de la version 1 (Tkinter)"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 13. Amélioration : bouton « Effacer toutes les tâches »
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 13.1 Demander un mini-plan
 
@@ -626,11 +846,29 @@ git add main.py
 git commit -m "Ajout du bouton Effacer toutes les tâches"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 14. Amélioration : sauvegarde JSON persistante
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 14.1 Objectif
 
@@ -779,11 +1017,29 @@ git add .gitignore main.py
 git commit -m "Ajout sauvegarde JSON + .gitignore"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 15. Procédures réutilisables (équivalent local des skills)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 15.1 Pourquoi ?
 
@@ -840,11 +1096,29 @@ le nombre total de tâches dans la Listbox.
 
 OpenClaude vous renvoie le plan + le code, vous copiez-collez.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 16. Tableau comparatif final
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Besoin | Claude Code officiel | OpenClaude + Ollama (ce TP) |
 |--------|---------------------|------------------------------|
@@ -859,11 +1133,29 @@ OpenClaude vous renvoie le plan + le code, vous copiez-collez.
 | Commandes personnalisées | skills `~/.claude/skills/` | `procedures/*.md` lus à la demande |
 | Fiabilité du tool-calling | très haute | basse → mode chat obligatoire |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 17. À retenir
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 > Un assistant de code **ne remplace pas** la méthode. Il **amplifie** une bonne méthode.
 
@@ -880,11 +1172,29 @@ Contexte (CLAUDE.md)
 
 Avec OpenClaude + Ollama, **vous gardez le contrôle** parce que c'est vous qui collez chaque ligne dans `main.py`. C'est plus lent qu'un agent, mais c'est aussi un excellent exercice pédagogique : vous **lisez** vraiment ce que l'IA produit.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 18. Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Erreurs Python / Tkinter
 
@@ -923,4 +1233,18 @@ Avec OpenClaude + Ollama, **vous gardez le contrôle** parce que c'est vous qui 
 | `main.py` reste vide après une demande | OpenClaude est un **chat**, pas un agent | Copier-coller manuellement le code donné en réponse |
 | Code généré ne suit pas les contraintes | `CLAUDE.md` jamais lu | Demander explicitement : `Lis CLAUDE.md avant de répondre.` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

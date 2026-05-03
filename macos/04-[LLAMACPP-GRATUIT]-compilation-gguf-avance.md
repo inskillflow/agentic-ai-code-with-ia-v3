@@ -32,6 +32,10 @@
 
 ## 1. Pourquoi compiler llama.cpp soi-même ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 | Avantage | Quand c'est utile |
 |----------|-------------------|
 | Optimisations Metal explicitement contrôlées | Squeeze max de perf sur Apple Silicon |
@@ -39,11 +43,29 @@
 | Binaires utilitaires : `llama-quantize`, `llama-bench` | Quantizer toi-même un FP16 → Q4_K_M |
 | Server HTTP exposé directement | Branché sur OpenClaude (cf. tuto 05) |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Pré-requis
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Outils de base
 
@@ -69,11 +91,29 @@ git --version
 - **Apple Silicon (M1/M2/M3)** : Metal sera utilisé automatiquement, pas de prérequis supplémentaires.
 - **Mac Intel** : pas de Metal performant. Tu utiliseras le CPU (AVX2). Performances modestes.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Cloner et compiler avec Metal
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 git clone https://github.com/ggml-org/llama.cpp.git
@@ -98,11 +138,29 @@ cmake --build build --config Release -j$(sysctl -n hw.ncpu)
 
 La compilation prend 5 à 15 min sur un Mac récent.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Vérifier la compilation
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 ls build/bin/llama-*
@@ -119,11 +177,29 @@ Test rapide :
 ./build/bin/llama-cli --version
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Récupérer un modèle GGUF
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Va sur HuggingFace, cherche un modèle GGUF (ex. [Qwen2.5-Coder-7B-Instruct-GGUF](https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF)).
 
@@ -141,11 +217,29 @@ curl -L -O https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resol
 ls -lh *.gguf
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Test 1 : `llama-cli` (one-shot)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans le dossier `llama.cpp` :
 
@@ -174,11 +268,29 @@ Options :
 
 Sors avec `Ctrl+C`.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Test 2 : `llama-server` (API HTTP compatible OpenAI)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 C'est ce mode qui sera utilisé par OpenClaude (tuto 05).
 
@@ -207,11 +319,29 @@ curl http://127.0.0.1:8080/v1/chat/completions \
 
 L'UI web est dispo sur `http://127.0.0.1:8080` dans ton navigateur.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Mesurer la performance
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 ./build/bin/llama-bench \
@@ -229,11 +359,29 @@ Comparaison indicative pour Qwen2.5-Coder-7B Q6_K :
 - M3 Max 64 Go → ~70-90 tok/s
 - Mac Intel sans Metal → ~3-7 tok/s
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Mise à jour de llama.cpp
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```bash
 cd llama.cpp
@@ -243,11 +391,29 @@ cmake --build build --config Release -j$(sysctl -n hw.ncpu)
 
 Si ça casse après une grosse mise à jour : `rm -rf build` puis recommence depuis le `cmake -B build ...`.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Cheatsheet
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Action | Commande |
 |--------|----------|
@@ -258,11 +424,29 @@ Si ça casse après une grosse mise à jour : `rm -rf build` puis recommence dep
 | Quantizer FP16→Q4 | `llama-quantize input.fp16.gguf output.q4_k_m.gguf Q4_K_M` |
 | Vérifier la version | `llama-cli --version` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Symptôme | Cause probable | Correctif |
 |----------|----------------|-----------|
@@ -276,14 +460,46 @@ Si ça casse après une grosse mise à jour : `rm -rf build` puis recommence dep
 | `unknown model architecture` | GGUF de format trop récent / trop vieux | Met à jour llama.cpp (`git pull` + recompile) |
 | Application bloquée par Gatekeeper | Binaire non signé | `xattr -d com.apple.quarantine ./build/bin/llama-cli` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 - [`05-[OPENCLAUDE-GRATUIT]-agent-local-llamacpp-avance.md`](./05-[OPENCLAUDE-GRATUIT]-agent-local-llamacpp-avance.md) — brancher OpenClaude sur ton serveur llama.cpp compilé
 - [`01-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md`](./01-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md) — l'alternative simple si compiler te paraît trop
 - [Documentation officielle llama.cpp](https://github.com/ggml-org/llama.cpp/tree/master/docs)
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

@@ -32,6 +32,10 @@
 
 ## 1. Qu'est-ce qu'OpenRouter ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 [OpenRouter](https://openrouter.ai) est un **proxy unifié** vers des dizaines de fournisseurs LLM (Anthropic, OpenAI, Google, Meta, Mistral, etc.). Une seule API, un seul format (compatible OpenAI), un seul facturage.
 
 **Pourquoi c'est utile pour OpenClaude** :
@@ -39,11 +43,29 @@
 - Tu n'as **pas besoin de GPU**.
 - Plusieurs modèles sont **vraiment gratuits** (avec des quotas).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Important : ce qui est *vraiment* gratuit
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 > **Honnêteté** : Claude (Sonnet, Opus, Haiku) **n'est pas gratuit** sur OpenRouter — c'est facturé au token, souvent légèrement plus cher que l'API Anthropic directe à cause de la commission OpenRouter.
 
@@ -61,11 +83,29 @@
 
 OpenRouter offre aussi ~5$ de crédits gratuits initiaux pour tester les modèles payants, mais ça part vite.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 3. Créer un compte OpenRouter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 1. Va sur [openrouter.ai](https://openrouter.ai).
 2. Clique **Sign in** → choisis Google, GitHub, ou e-mail.
@@ -73,11 +113,29 @@ OpenRouter offre aussi ~5$ de crédits gratuits initiaux pour tester les modèle
 
 Aucune carte bancaire n'est requise pour utiliser **uniquement** les modèles `:free`.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 4. Générer une clé API
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 1. Va sur [openrouter.ai/keys](https://openrouter.ai/keys).
 2. Clique **Create Key**.
@@ -88,11 +146,29 @@ Aucune carte bancaire n'est requise pour utiliser **uniquement** les modèles `:
 
 Stocke-la dans un endroit sûr (gestionnaire de mots de passe).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 5. Configurer OpenClaude pour OpenRouter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Variables d'environnement (session PowerShell)
 
@@ -114,11 +190,29 @@ $env:OPENAI_MODEL = "meta-llama/llama-3.1-405b-instruct:free"
 openclaude
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 6. Choisir un modèle gratuit recommandé
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Cas d'usage | Modèle recommandé |
 |-------------|-------------------|
@@ -130,11 +224,29 @@ openclaude
 
 Pour switcher de modèle, il suffit de changer `OPENAI_MODEL` et de relancer `openclaude`.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 7. Variables d'environnement permanentes
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Profil PowerShell
 ```powershell
@@ -178,11 +290,29 @@ openclaude
 
 > **Sécurité** : ajoute `.env` à ton `.gitignore` pour ne **jamais** committer ta clé API.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 8. Premier test
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans OpenClaude :
 
@@ -210,11 +340,29 @@ Invoke-RestMethod -Uri "https://openrouter.ai/api/v1/chat/completions" `
     -ContentType "application/json" -Body $body
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 9. Quotas et limites des modèles `:free`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 OpenRouter applique des **rate limits** sur les modèles `:free` :
 
@@ -226,11 +374,29 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 
 > Si tu fais un TP intensif et que tu te fais bloquer, bascule temporairement sur Ollama local (tuto 02) — c'est sans quota.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 10. Comparaison Ollama local vs OpenRouter cloud gratuit
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Critère | Ollama local | OpenRouter `:free` |
 |---------|--------------|--------------------|
@@ -245,11 +411,29 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 
 > **Conseil pour PC sans GPU** : OpenRouter `:free` te donnera un bien meilleur résultat qu'Ollama qui tourne sur CPU.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Symptôme | Cause | Correctif |
 |----------|-------|-----------|
@@ -262,15 +446,47 @@ Quand tu dépasses, tu reçois un `429 Too Many Requests`. Attends une minute pu
 | Le modèle parle anglais alors que tu écris en français | Modèle moins multilingue (Llama 3.1) | Utilise `meta-llama/llama-3.3-70b-instruct:free` ou `qwen/...` |
 | Erreur de certificat HTTPS | Proxy d'entreprise | Configure `$env:HTTP_PROXY` et `$env:HTTPS_PROXY` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Suite
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 - [`07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md`](./07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md) — TP mini-app Python avec OpenRouter (cloud gratuit)
 - [`02-[OPENCLAUDE-GRATUIT]-installation-ollama-lmstudio.md`](./02-[OPENCLAUDE-GRATUIT]-installation-ollama-lmstudio.md) — alternative locale (Ollama)
 - [Documentation OpenRouter](https://openrouter.ai/docs)
 - [Liste des modèles gratuits](https://openrouter.ai/models?max_price=0)
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>

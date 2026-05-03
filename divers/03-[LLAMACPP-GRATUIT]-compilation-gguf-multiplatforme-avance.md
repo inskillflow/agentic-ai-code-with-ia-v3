@@ -31,6 +31,10 @@
 
 ## 1. C'est quoi CMake et pourquoi compiler ?
 
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
+
 **CMake** = un outil qui génère des fichiers de build (Makefiles, projets Visual Studio, Ninja…) à partir d'un fichier `CMakeLists.txt`. Il **ne compile pas lui-même**, il prépare le terrain pour MSVC, GCC ou Clang qui font le vrai boulot.
 
 ```
@@ -49,11 +53,29 @@ CMakeLists.txt  →  CMake (génère)  →  Makefile / projet VS  →  compilate
 
 **Inconvénient** : 5 à 15 min de compilation et plein de pièges (surtout sous Windows). Si tu n'as pas de besoin pointu, **utilise Ollama** (fichier 02).
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## 2. Pré-requis (Windows / macOS / Linux)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 2.1 Communs aux trois OS
 
@@ -120,11 +142,29 @@ cmake --version
 nvcc --version    # uniquement si tu vises CUDA
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 1 — Cloner `llama.cpp`
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Windows (PowerShell)
 ```powershell
@@ -141,11 +181,29 @@ cd llama.cpp
 
 Durée : 30 s à 1 min.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 2 — Compiler avec CMake (5–15 min)
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 C'est l'étape critique.
 
@@ -213,11 +271,29 @@ cmake --build build --config Release -j --target llama-server
 ### Si ça plante
 Voir [Troubleshooting](#troubleshooting) en bas du fichier.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 3 — Récupérer un `.gguf` depuis Hugging Face
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### 3.1 Setup Python + Hugging Face CLI
 
@@ -279,11 +355,29 @@ export HF_HUB_DISABLE_XET=1
 $env:HF_HUB_DISABLE_XET = "1"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 4 — Installer OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Windows (PowerShell)
 ```powershell
@@ -303,11 +397,29 @@ npm install -g @gitlawb/openclaude
 openclaude --version
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 5 — Lancer le serveur llama.cpp
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 C'est ici que **tout s'allume** : le `.gguf` se charge en VRAM, `llama-server` démarre sur le port 8090, expose une API OpenAI-compat.
 
@@ -367,11 +479,29 @@ export OPENAI_MODEL=local-gemma
 curl http://127.0.0.1:8090/v1/models -H "Authorization: Bearer localdev"
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 6 — Lancer OpenClaude
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 **Dans le terminal où les variables d'environnement sont exportées** :
 
@@ -399,11 +529,29 @@ crée un fichier hello.py qui affiche bonjour
 
 L'agent doit créer le fichier dans ton dossier courant.
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Étape 7 — Arrêter
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Dans OpenClaude : `Ctrl+C` ou `/exit`.
 
@@ -422,11 +570,29 @@ pgrep -f llama-server
 pkill -f llama-server
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Sessions suivantes
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 Plus besoin de tout refaire. Juste :
 
@@ -451,11 +617,29 @@ openclaude
 pkill -f llama-server
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Récap ultra-condensé
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 | Étape | Action | Durée | Quand |
 |-------|--------|-------|-------|
@@ -471,11 +655,29 @@ pkill -f llama-server
 **Première installation totale : ~30-50 min**
 **Sessions suivantes : 30 secondes**
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Architecture finale
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ```
    ┌──────────────┐
@@ -503,11 +705,29 @@ pkill -f llama-server
                                      └────────────────────────┘
 ```
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Troubleshooting
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 ### Erreurs build (Windows)
 
@@ -553,15 +773,47 @@ pkill -f llama-server
 | 3 | `llama-server` crash silencieux | OOM VRAM (Q8 sur 8 Go par ex.) | Utilise une quantization plus légère (Q6, Q5), ou réduis `--ctx-size` (ex. `4096`) |
 | 4 | Réponses très lentes (CPU only) | GPU non détecté | Vérifie le build : doit contenir `GGML_CUDA`/`GGML_METAL`/`GGML_HIP` ; vérifie `--n-gpu-layers 99` |
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
 
 ---
 
 ## Pour aller plus loin
+
+<details open>
+<summary><b>Cliquer pour replier / deplier cette section</b></summary>
+
 
 - [`01-[OPENCLAUDE-GRATUIT]-installation-multiplatforme-ollama-lmstudio.md`](./01-[OPENCLAUDE-GRATUIT]-installation-multiplatforme-ollama-lmstudio.md) — installation OpenClaude (Ollama / LM Studio)
 - [`02-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md`](./02-[OLLAMA-GRATUIT]-quickstart-installation-modeles-locaux.md) — alternative simple (Ollama)
 - [`04-[OPENCLAUDE-GRATUIT]-agent-local-avance-llamacpp-compile-soi-meme.md`](./04-[OPENCLAUDE-GRATUIT]-agent-local-avance-llamacpp-compile-soi-meme.md) — version verbose avec tuning, multi-GPU, optimisations avancées
 - [`scripts/README.md`](../scripts/README.md) — tableau synthétique des scripts PowerShell
 
-[↑ Sommaire](#sommaire)
+</details>
+
+<br>
+
+<div align="center">
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# [&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;RETOUR EN HAUT&nbsp;&nbsp;&nbsp;▲&nbsp;&nbsp;&nbsp;](#sommaire)
+
+### ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
