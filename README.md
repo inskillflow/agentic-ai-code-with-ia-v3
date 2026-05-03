@@ -147,3 +147,56 @@ Les tutos évoluent vite avec les nouvelles versions des outils. PRs bienvenues 
 - mettre à jour les versions de modèles `:free` d'OpenRouter
 - ajouter des modèles GGUF performants
 - corriger les troubleshootings d'OS spécifiques
+
+---
+
+## Dépôts liés (écosystème inskillflow)
+
+Ce dépôt fait partie d'une série progressive sur l'IA assistée pour le code. Voici les autres briques utiles :
+
+### [agentic-ai-code-with-ia-v1](https://github.com/inskillflow/agentic-ai-code-with-ia-v1)
+
+**Première version pédagogique — pourquoi local ≠ agentique.**
+Point d'entrée historique de la série. Explique en détail la différence entre :
+
+- un LLM **local** qu'on consulte (chat, copier-coller dans l'éditeur)
+- un agent **agentique** qui lit/écrit/exécute du code dans le projet
+
+Inclut la grosse section **troubleshooting d'origine** (drivers GPU, ports, modèles trop gros pour la VRAM, erreurs `ECONNREFUSED`, problèmes de PATH, etc.) qu'on a ensuite répartie par tuto dans v3.
+
+À lire si tu veux comprendre **pourquoi** on choisit OpenClaude / Claude Code / Ollama plutôt qu'un simple chatbot.
+
+### [agentic-ai-code-with-ia-v2](https://github.com/inskillflow/agentic-ai-code-with-ia-v2) *(privé)*
+
+**Documentation ultra complète — référence interne.**
+Version longue et exhaustive : tous les détails sur chaque outil, chaque flag, chaque option de chaque slash command, comparatifs lourds, benchmarks de modèles GGUF, cas d'usage pro.
+
+Dépôt **privé** (accessible aux membres de l'organisation `inskillflow`). Si tu cherches l'information la plus complète et que tu y as accès, c'est là. Sinon, v3 (ce dépôt) est le résumé pédagogique public.
+
+### [agentic-ai-code-with-ia-v3](https://github.com/inskillflow/agentic-ai-code-with-ia-v3) *(ce dépôt)*
+
+**Résumé pédagogique de v2, mais plus structuré et plus complet sur le multiplateforme.**
+Reprend l'essentiel de v2 sous forme de tutos courts, organisés par OS (Linux / macOS / Windows) et par parcours pédagogique, avec OpenRouter ajouté comme alternative cloud gratuite. Public, ouvert aux étudiants.
+
+### [gemma-agressif-war-machine-2](https://github.com/inskillflow/gemma-agressif-war-machine-2)
+
+**Modèle local 100 % offline avec llama.cpp + GPU NVIDIA.**
+Setup complet pour faire tourner un LLM **uniquement en local** (zéro cloud, zéro API key, zéro dépendance internet une fois téléchargé) :
+
+- compilation de `llama.cpp` avec **CUDA** pour exploiter à fond le GPU NVIDIA
+- modèle Gemma agressif (variante non-censurée) prêt à l'emploi
+- scripts de démarrage du serveur OpenAI-compatible
+- intégration directe avec OpenClaude via `OPENAI_BASE_URL`
+
+À utiliser quand tu veux la **performance maximale en local** (latence minimale, modèles non bridés, pas de quota), avec une carte NVIDIA correcte (≥ 8 Go VRAM recommandé).
+
+---
+
+### Quel dépôt choisir selon ton besoin
+
+| Besoin | Dépôt à ouvrir |
+|---|---|
+| Comprendre les concepts de base et le pourquoi | **v1** |
+| Apprendre vite avec des tutos clairs sur ton OS | **v3** *(ici)* |
+| Référence exhaustive (membres `inskillflow`) | **v2** |
+| Tourner un LLM 100 % local optimisé GPU NVIDIA | **gemma-agressif-war-machine-2** |
