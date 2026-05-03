@@ -1,0 +1,24 @@
+# OS / éditeurs
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Anciens fichiers d'origine du dépôt source, hors push
+01-installation-openclaude-multiplatform.md
+01a.md
+01b.md
+02-tutoriel-agent-local-llamacpp-avance.md
+04-mini-app-1-gestionnaire-de-taches-en-python.md
+05-(GRATUIT)mini-app-1-gestionnaire-de-taches-en-python-version-open-claude.md

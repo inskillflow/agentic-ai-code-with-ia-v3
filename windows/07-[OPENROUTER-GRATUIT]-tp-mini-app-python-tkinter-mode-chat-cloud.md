@@ -1,0 +1,317 @@
+# 07 — TP mini-app Python/Tkinter sur **Windows** : OpenClaude + OpenRouter (mode chat, cloud gratuit)
+
+> **Public** : étudiants débutants en Python.
+> **Coût** : 100 % gratuit (modèles `:free` d'OpenRouter).
+> **OS** : Windows 10 / 11.
+> **Durée** : 1 h.
+> **Avantage clé** : pas besoin de GPU NVIDIA, modèles 70B-405B accessibles depuis n'importe quel laptop.
+> **Pré-requis** :
+> - [Tuto 02 — OpenClaude installé](./02-[OPENCLAUDE-GRATUIT]-installation-ollama-lmstudio.md)
+> - [Tuto 03 — OpenRouter configuré (clé API)](./03-[OPENROUTER-GRATUIT]-openclaude-modeles-cloud-gratuits.md)
+> - Python 3.9+ avec Tkinter
+> - PowerShell 7
+
+> Pour Linux → [`../linux/07-[OPENROUTER-GRATUIT]-...`](../linux/07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md).
+> Pour macOS → [`../macos/07-[OPENROUTER-GRATUIT]-...`](../macos/07-[OPENROUTER-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-cloud.md).
+
+> **Quelle différence avec le tuto 06 ?**
+> - Le tuto 06 utilise Ollama **local** (pas d'internet, pas de quota).
+> - Ce tuto 07 utilise OpenRouter **cloud** (internet requis, quotas, mais modèles 70B-405B).
+> - Le résultat de l'IA est **bien meilleur** ici si tu n'as pas un GPU dédié.
+
+---
+
+## Sommaire
+
+1. [Quand préférer OpenRouter à Ollama ?](#1-quand-préférer-openrouter-à-ollama-)
+2. [Vérifier ton accès OpenRouter](#2-vérifier-ton-accès-openrouter)
+3. [Préparer l'environnement Python](#3-préparer-lenvironnement-python)
+4. [Créer le dossier de projet](#4-créer-le-dossier-de-projet)
+5. [Configurer OpenClaude pour OpenRouter](#5-configurer-openclaude-pour-openrouter)
+6. [Lancer OpenClaude](#6-lancer-openclaude)
+7. [Étape A à E — Construction de la mini-app](#7-étape-a-à-e--construction-de-la-mini-app)
+8. [Astuces pour économiser tes quotas `:free`](#8-astuces-pour-économiser-tes-quotas-free)
+9. [Sécurité de la clé API](#9-sécurité-de-la-clé-api)
+10. [Bonus — Premier commit Git](#10-bonus--premier-commit-git)
+11. [Troubleshooting](#troubleshooting)
+12. [Suite](#suite)
+
+---
+
+## 1. Quand préférer OpenRouter à Ollama ?
+
+| Cas | Préfère |
+|-----|---------|
+| Laptop sans GPU NVIDIA / iGPU Intel | **OpenRouter** (Llama 405B sur cloud > 7B sur ton CPU) |
+| Tu fais le TP en classe avec internet | **OpenRouter** |
+| Tu veux la meilleure qualité de code IA gratuite | **OpenRouter** (Llama 3.3 70B > Qwen 7B local) |
+| Tu travailles sans internet | **Ollama** |
+| Tu fais des centaines de prompts | **Ollama** (pas de quota) |
+| Tu manipules du code confidentiel | **Ollama** (rien ne sort) |
+| Tu as une RTX 3060+ | **Ollama** (Qwen 14B local rapide) |
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 2. Vérifier ton accès OpenRouter
+
+```powershell
+echo $env:OPENAI_API_KEY     # doit commencer par sk-or-v1-
+echo $env:OPENAI_BASE_URL    # doit être https://openrouter.ai/api/v1
+```
+
+Test direct :
+
+```powershell
+curl.exe -s https://openrouter.ai/api/v1/models -H "Authorization: Bearer $env:OPENAI_API_KEY" | Select-Object -First 1
+```
+
+Tu dois voir un JSON listant les modèles. Si erreur 401 → clé invalide, retour au [tuto 03](./03-[OPENROUTER-GRATUIT]-openclaude-modeles-cloud-gratuits.md).
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 3. Préparer l'environnement Python
+
+```powershell
+python --version
+python -c "import tkinter; print('Tkinter OK')"
+```
+
+Si manquant :
+```powershell
+winget install Python.Python.3.12
+```
+
+> **Important** : coche « Add Python to PATH » et garde Tcl/Tk dans les options.
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 4. Créer le dossier de projet
+
+```powershell
+mkdir $env:USERPROFILE\projets\gestionnaire-taches-cloud -Force
+cd $env:USERPROFILE\projets\gestionnaire-taches-cloud
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 5. Configurer OpenClaude pour OpenRouter
+
+Pour ce TP, on choisit un modèle qui code bien :
+
+```powershell
+$env:OPENAI_API_KEY = "sk-or-v1-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+$env:OPENAI_BASE_URL = "https://openrouter.ai/api/v1"
+$env:OPENAI_MODEL = "qwen/qwen-2.5-coder-32b-instruct:free"
+```
+
+> Alternatives : `meta-llama/llama-3.3-70b-instruct:free`, `deepseek/deepseek-chat-v3:free`, `google/gemini-2.0-flash-exp:free`.
+
+Vérifie :
+
+```powershell
+echo $env:OPENAI_BASE_URL
+echo $env:OPENAI_MODEL
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 6. Lancer OpenClaude
+
+```powershell
+openclaude
+```
+
+Tape :
+
+```
+Bonjour ! Quel modèle exact es-tu et qui t'a entraîné ?
+```
+
+Tu dois voir une réponse cohérente identifiant le modèle.
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 7. Étape A à E — Construction de la mini-app
+
+> Le déroulé est **identique au [tuto 06](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md)** mais avec un meilleur modèle, donc tu peux te permettre des prompts plus ambitieux.
+
+### Étape A — Squelette Tkinter
+
+```
+Donne-moi le code Python d'une fenêtre Tkinter 400x500 intitulée
+"Mon Gestionnaire de Tâches" avec un titre "Mes tâches".
+Pattern : classe TaskApp, main guard, pas de commentaires inutiles.
+```
+
+Crée `main.py` (depuis VS Code : `code .`), colle, lance :
+
+```powershell
+python main.py
+```
+
+### Étape B — Ajouter une tâche
+
+```
+À TaskApp, ajoute :
+- un Entry pour saisir
+- un bouton "Ajouter"
+- une Listbox affichant les tâches
+Liste en mémoire dans self.tasks.
+Vide l'Entry après ajout.
+Réécris seulement les méthodes modifiées.
+```
+
+### Étape C — Supprimer
+
+```
+Bouton "Supprimer" qui retire la tâche sélectionnée.
+Si rien n'est sélectionné, ne fais rien (pas d'erreur).
+```
+
+### Étape D — Marquer comme faite (toggle)
+
+```
+Bouton "Faite" qui préfixe la tâche par "[X] ".
+Si déjà préfixée, retire le préfixe (toggle).
+```
+
+### Étape E — Persistance JSON
+
+```
+Sauvegarde self.tasks dans tasks.json à chaque modification.
+Au démarrage, charge tasks.json s'il existe (vide si JSONDecodeError).
+```
+
+### Bonus (à oser avec un modèle 32B)
+
+```
+Refactor ma classe TaskApp pour séparer la logique métier
+(ajouter/supprimer/toggle/sauvegarder) de l'UI Tkinter.
+Crée une classe TaskRepository qui gère le JSON,
+et garde TaskApp pour l'UI uniquement.
+Donne-moi les deux classes.
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 8. Astuces pour économiser tes quotas `:free`
+
+OpenRouter limite à ~20 req/min et ~200 req/jour sur les modèles `:free`.
+
+**À faire** :
+- ✅ Pose **une question complète** plutôt que 10 petites
+- ✅ Joins le code pertinent à ta question
+- ✅ Utilise `/clear` quand tu changes de sujet
+- ✅ Garde Ollama local en backup
+
+**À éviter** :
+- ❌ « Est-ce que tu peux ? » puis « alors fais-le » (2 requêtes pour 1 résultat)
+- ❌ Coller 500 lignes pour demander une virgule
+
+Si bloqué (`429 Too Many Requests`), bascule sur Ollama (cf. tuto 06) :
+
+```powershell
+$env:OPENAI_API_KEY = "ollama"
+$env:OPENAI_BASE_URL = "http://127.0.0.1:11434/v1"
+$env:OPENAI_MODEL = "qwen2.5-coder:7b"
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 9. Sécurité de la clé API
+
+> ⚠️ Ta clé `sk-or-v1-...` est un secret. Ne la commit **jamais** dans Git.
+
+```powershell
+@"
+__pycache__/
+*.pyc
+.venv/
+.env
+Thumbs.db
+"@ | Set-Content .gitignore
+```
+
+Si tu utilises un `.env` projet :
+```powershell
+@"
+OPENAI_API_KEY=sk-or-v1-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+OPENAI_MODEL=qwen/qwen-2.5-coder-32b-instruct:free
+"@ | Set-Content .env
+```
+
+Vérifie :
+```powershell
+git status   # tu ne dois pas voir .env
+```
+
+Si tu commit accidentellement, **régénère immédiatement** sur [openrouter.ai/keys](https://openrouter.ai/keys).
+
+### Bonus Windows — stocker via Credential Manager
+```powershell
+cmdkey /generic:openrouter /user:api /pass:"sk-or-v1-..."
+# Récupération (PowerShell + module CredentialManager) :
+# Install-Module CredentialManager -Scope CurrentUser
+# $env:OPENAI_API_KEY = (Get-StoredCredential -Target openrouter).Password | ConvertFrom-SecureString -AsPlainText
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## 10. Bonus — Premier commit Git
+
+```powershell
+cd $env:USERPROFILE\projets\gestionnaire-taches-cloud
+git init -b main
+
+git add .
+git status   # vérifie absence de .env
+git commit -m "TP mini-app cloud (OpenRouter free) : gestionnaire de tâches Tkinter"
+git log --oneline
+```
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## Troubleshooting
+
+| Symptôme | Cause | Correctif |
+|----------|-------|-----------|
+| `401 Unauthorized` | Clé API absente/erronée | `echo $env:OPENAI_API_KEY` ; régénère sur [openrouter.ai/keys](https://openrouter.ai/keys) |
+| `404 model not found` | Modèle plus disponible | Va sur [openrouter.ai/models?max_price=0](https://openrouter.ai/models?max_price=0) |
+| `429 Too Many Requests` | Rate limit `:free` dépassé | Attends 1 min, ou bascule sur Ollama |
+| `402 Payment Required` | Modèle payant sans crédits | Repasse à un `:free` |
+| Réponse en anglais en écrivant en français | Modèle moins multilingue | Utilise `meta-llama/llama-3.3-70b-instruct:free` ou `qwen/...` |
+| `ModuleNotFoundError: tkinter` | Tcl/Tk décoché à l'install Python | Réinstalle Python (Modify → coche Tcl/Tk) |
+| Erreur SSL/TLS | Proxy d'entreprise | Configure `$env:HTTP_PROXY` et `$env:HTTPS_PROXY` |
+| Accents cassés | Console CP1252 | `chcp 65001` |
+
+[↑ Sommaire](#sommaire)
+
+---
+
+## Suite
+
+- [`06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md`](./06-[OPENCLAUDE-GRATUIT]-tp-mini-app-python-tkinter-mode-chat-ollama.md) — la version locale (Ollama, sans quota, sans internet)
+- [`08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md`](./08-[CLAUDE-PAYANT]-tp-mini-app-python-tkinter-mode-agent.md) — la version « pro » avec Claude Code en mode agent
+
+[↑ Sommaire](#sommaire)
